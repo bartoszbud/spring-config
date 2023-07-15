@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>pl.lab</groupId>
-	<artifactId>config-server</artifactId>
+	<artifactId>config-server-sba</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>config-server-sba</name>
 	<description>Config server for Spring Boot</description>
