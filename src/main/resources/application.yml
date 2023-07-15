@@ -13,7 +13,7 @@ spring:
     config:
       server:
         native:
-          searchLocations: file:///tmp/microservices/config/
+          searchLocations: file:///opt/microservices/config/
 management:
   endpoints:
     web:
