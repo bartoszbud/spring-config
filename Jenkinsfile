@@ -8,6 +8,7 @@
         def yml = readYaml file: 'ct.yml'
         def ct_port = "${yml.port}"
         def log_file = "${yml.log}"
+        def env = "${yml.env}"
     }
 
     options {
@@ -38,7 +39,7 @@
          stage('Prepare') {
             steps {
                catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-                sh 'sh /var/jenkins_home/pipe_prepare.sh ${artifactId} ${version}'
+                sh 'sh /var/jenkins_home/pipe_prepare.sh $env ${artifactId} ${version}'
                }
             }
          }
