@@ -6,7 +6,7 @@ spring:
   boot:
     admin:
       client:
-        url: 10.0.0.24:8762
+        url: http://spring-admin-ct.lab.pl/
   profiles:
     active: native
   cloud:
