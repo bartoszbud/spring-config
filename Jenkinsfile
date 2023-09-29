@@ -45,7 +45,7 @@
          }
          stage('Deploy') {
             steps {
-               sh 'sh /var/jenkins_home/pipe_deploy.sh ${artifactId} ${version} ${ct_port} ${log_file}'
+               sh 'sh /var/jenkins_home/pipe_deploy.sh ${env} ${artifactId} ${version} ${ct_port} ${log_file}'
             }
          }
     }
