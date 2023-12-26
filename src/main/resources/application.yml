@@ -6,8 +6,9 @@ spring:
   boot:
     admin:
       client:
-        url: http://spring-admin-ct.lab.pl/
-        instance: ${HOSTNAME}
+        url: http://spring-admin-service/
+        instance:
+          name: spring-config-sba
   profiles:
     active: native
   cloud:
