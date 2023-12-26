@@ -9,6 +9,7 @@ spring:
         url: http://spring-admin-service/
         instance:
           name: spring-config-sba
+          prefer-ip: true
   profiles:
     active: native
   cloud:
