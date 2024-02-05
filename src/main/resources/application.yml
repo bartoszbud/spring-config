@@ -1,0 +1,27 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: spring-config
+  boot:
+    admin:
+      client:
+        url: http://spring-admin-service/
+        instance:
+          name: spring-config
+          prefer-ip: true
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/bartoszbud/config.git
+          repos:
+            dev:
+              pattern: '*/dev'
+              cloneOnStart: true
+              force-pull: true
+              uri: https://github.com/bartoszbud/config.git
+              searchPaths: dev
+              strictHostKeyChecking: false
