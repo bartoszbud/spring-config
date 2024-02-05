@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>pl.lab</groupId>
 	<artifactId>spring-config</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>DEV-SNAPSHOT</version>
 	<name>spring-config</name>
 	<description>Config server for Spring Boot</description>
 	<properties>
