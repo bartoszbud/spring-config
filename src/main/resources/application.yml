@@ -24,4 +24,12 @@ spring:
               force-pull: true
               uri: https://github.com/bartoszbud/config.git
               searchPaths: dev
-              strictHostKeyChecking: false
+              #strictHostKeyChecking: false
+management:
+  endpoints:
+    web:
+      exposure:
+        include: prometheus,health
+  info:
+    env:
+      enabled: true
